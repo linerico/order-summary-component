@@ -1,0 +1,156 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Red Hat Display";
+  
+}
+
+p {
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--pale-blue);
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.card {
+  max-width: 400px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 20px 10px 0 var(--pale-blue);
+  margin: 0 20px
+}
+
+.card .image img {
+  width: 100%;
+}
+
+.card .main {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 20px;
+}
+
+.card .main .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.card .main .content .label {
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.card .main .content p {
+  text-align: center;
+  line-height: 25px;
+  color: var(--desaturated-blue);
+}
+
+.card .main .plan {
+  background-color: var(--very-pale-blue);
+  display: flex;
+  padding: 18px;
+  border-radius: 10px;
+  gap: 15px;
+}
+
+.card .main .plan .plan-icon {
+  height: 40px;
+  width: 40px;
+}
+
+.card .main .plan .plan-icon img {
+  height: 40px;
+  width: 40px;
+}
+
+.card .main .plan .plan-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.card .main .plan .plan-detail .plan-label {
+  color: black;
+  font-weight: 900;
+}
+
+.card .main .plan .plan-detail {
+  color: var(--desaturated-blue);
+}
+
+.card .main .plan .plan-action {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  color: var(--bright-blue);
+  text-decoration: underline;
+  font-weight: 900;
+}
+
+.card .main .plan .plan-action:hover {
+  color: #766CF1;
+  cursor: pointer;
+}
+
+.card .main .action {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card .main .action button {
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: transparent;
+  font-weight: 900;
+}
+
+.card .main .action .btn-process {
+  color: white;
+  background-color: var(--bright-blue);
+  box-shadow: 0 20px 10px 0 var(--pale-blue);
+}
+
+.card .main .action .btn-process:hover {
+  background-color: #766CF1;
+  cursor: pointer;
+}
+
+.card .main .action .btn-cancel {
+  color: var(--desaturated-blue);
+  
+}
+
+.card .main .action .btn-cancel:hover {
+  color: black;
+  cursor: pointer;
+}
